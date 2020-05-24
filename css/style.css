@@ -1,0 +1,312 @@
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script|Devonshire|Kurale|Kaushan+Script|Open+Sans:700&display=swap");
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  transition: all 0.5s ease;
+  padding-bottom: 4rem;
+}
+html ::-webkit-scrollbar,
+body ::-webkit-scrollbar {
+  width: 6px;
+  background-color: #F5F5F5;
+}
+html ::-webkit-scrollbar-thumb,
+body ::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #579c87;
+}
+html ::-webkit-scrollbar-track,
+body ::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+
+.container {
+  max-width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media screen and (min-width: 567px) {
+  .container {
+    max-width: 567px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 992px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+.navigation {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background: #579c87;
+}
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 0.5em;
+  font-size: 3em;
+  color: #fdcb46;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 800px) {
+  .navigation {
+    justify-content: space-around;
+  }
+}
+@media screen and (max-width: 600px) {
+  .navigation a {
+    text-align: center;
+    padding: 0.5em;
+    font-size: 2em;
+  }
+}
+.main {
+  display: flex;
+  flex-flow: row wrap;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  margin: 0 20% 0 20%;
+}
+.main .btn {
+  display: flex;
+  justify-content: center;
+  flex: 100%;
+  padding-bottom: 6rem;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+.main .btn button {
+  background-color: #579c87;
+  width: 300px;
+  border: none;
+  height: 4rem;
+  border-radius: 15px;
+  font-size: 1.5rem;
+  color: #fdcb46;
+}
+@media screen and (max-width: 1280px) {
+  .main {
+    flex-flow: row wrap;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .main {
+    flex-flow: row wrap;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .main {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.menu {
+  display: flex;
+  flex-flow: column wrap;
+  width: 20em;
+  height: 50%;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+.menu a {
+  text-decoration: none;
+  text-align: center;
+  transition: transform 0.5s ease;
+}
+.menu a:hover {
+  transform: scale(1.05);
+}
+@media screen and (max-width: 800px) {
+  .menu {
+    height: 70%;
+  }
+}
+
+.a {
+  font-family: "Devonshire", cursive, sans-serif;
+  font-size: large;
+  font-weight: 200;
+  background-color: #fcdfdb;
+}
+.a img {
+  height: 50px;
+}
+.a h2,
+.a h1 {
+  background: #3c1218;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.b {
+  font-family: "Kurale", serif;
+  font-size: large;
+  background-color: #fff5fe;
+}
+.b h2,
+.b h1 {
+  background: -webkit-gradient(linear, left top, right bottom, from(#d8852e), to(#905bfd));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.c {
+  font-family: "Dancing Script", cursive;
+  font-size: large;
+  background-color: #f9f9f9;
+}
+.c h2,
+.c h1 {
+  background: -webkit-gradient(linear, left top, right bottom, from(#0431df), to(#0887fb));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.d {
+  font-family: "Kaushan Script", cursive;
+  font-size: large;
+  background-color: #fdfffd;
+}
+.d h2,
+.d h1 {
+  background: -webkit-gradient(linear, left top, right bottom, from(#3d9339), to(#bfff7e));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@-webkit-keyframes wobble {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  15% {
+    -webkit-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+  }
+  30% {
+    -webkit-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+    transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+  }
+  45% {
+    -webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+  }
+  60% {
+    -webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+  }
+  75% {
+    -webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes wobble {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  15% {
+    -webkit-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+  }
+  30% {
+    -webkit-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+    transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+  }
+  45% {
+    -webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+  }
+  60% {
+    -webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+  }
+  75% {
+    -webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+.footer {
+  display: flex;
+  flex-flow: row wrap;
+  position: fixed;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  left: 0px;
+  bottom: 0px;
+  background-color: #579c87;
+}
+.footer a {
+  text-decoration: none;
+  color: #fdcb46;
+  font-size: large;
+  padding: 1rem;
+}
+@media screen and (max-width: 360px) {
+  .footer a {
+    font-size: small;
+  }
+}
+.footer a:hover {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: wobble;
+  animation-name: wobble;
+}
+
+/*# sourceMappingURL=style.css.map */

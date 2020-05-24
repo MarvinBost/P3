@@ -1,0 +1,56 @@
+@import 'mixins.scss';
+
+.main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    margin: 0 20% 0 20%;
+
+
+
+    .btn {
+        display: flex;
+        justify-content: center;
+        flex: 100%;
+        padding-bottom: 6rem;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-name: fadeInUp;
+        animation-name: fadeInUp;
+        -webkit-animation-delay: 1s;
+        animation-delay: 1s;
+
+        button {
+            background-color: #579c87;
+            width: 300px;
+            border: none;
+            height: 4rem;
+            border-radius: 15px;
+            font-size: 1.5rem;
+            color: #fdcb46;
+        }
+    }
+
+    @include mediamaxwidth(1280px) {
+        flex-flow: row wrap;
+        margin: 0;
+    }
+
+    @include mediaminwidth(1280px) {
+        flex-flow: row wrap;
+        max-width: 1024px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @include mediaminwidth(1920px) {
+        max-width: 1024px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

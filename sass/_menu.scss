@@ -1,0 +1,94 @@
+.menu {
+    display: flex;
+    flex-flow: column wrap;
+    width: 20em;
+    height: 50%;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+
+    a {
+        text-decoration: none;
+        text-align: center;
+        transition: transform 0.5s ease;
+    }
+
+    a:hover {
+        transform: scale(1.05);
+    }
+
+    @include mediamaxwidth(800px) {
+        height: 70%;
+    }
+}
+
+.a {
+    font-family: "Devonshire",
+        cursive,
+        sans-serif;
+    font-size: large;
+    font-weight: 200;
+    background-color: #fcdfdb;
+
+    img {
+        height: 50px;
+    }
+
+    h2,
+    h1 {
+        background: #3c1218;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+    }
+}
+
+.b {
+    font-family: 'Kurale',
+        serif;
+    font-size: large;
+    background-color: #fff5fe;
+
+    h2,
+    h1 {
+        background: -webkit-gradient(linear, left top, right bottom, from(#d8852e), to(#905bfd));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.c {
+    font-family: 'Dancing Script',
+        cursive;
+    font-size: large;
+    background-color: #f9f9f9;
+
+    h2,
+    h1 {
+        background: -webkit-gradient(linear, left top, right bottom, from(#0431df), to(#0887fb));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.d {
+    font-family: 'Kaushan Script',
+        cursive;
+    font-size: large;
+    background-color: #fdfffd;
+
+    h2,
+    h1 {
+        background: -webkit-gradient(linear, left top, right bottom, from(#3d9339), to(#bfff7e));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}

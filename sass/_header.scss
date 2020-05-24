@@ -1,0 +1,32 @@
+.navigation {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background: #579c87;
+
+    a {
+        text-decoration: none;
+        display: block;
+        padding: 0.5em;
+        font-size: 3em;
+        color: #fdcb46;
+        font-weight: bold;
+    }
+}
+
+
+@include mediamaxwidth(800px) {
+    .navigation {
+        justify-content: space-around;
+    }
+}
+
+@include mediamaxwidth(600px) {
+    .navigation {
+        a {
+            text-align: center;
+            padding: 0.5em;
+            font-size: 2em;
+        }
+    }
+}
