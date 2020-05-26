@@ -1,10 +1,11 @@
-.navigation {
+header {
     display: flex;
     width: 100%;
     justify-content: center;
     background: #579c87;
 
-    a {
+    a,
+    h1 {
         text-decoration: none;
         display: block;
         padding: 0.5em;
@@ -16,14 +17,16 @@
 
 
 @include mediamaxwidth(800px) {
-    .navigation {
+    header {
         justify-content: space-around;
     }
 }
 
 @include mediamaxwidth(600px) {
-    .navigation {
-        a {
+    header {
+
+        a,
+        h1 {
             text-align: center;
             padding: 0.5em;
             font-size: 2em;
