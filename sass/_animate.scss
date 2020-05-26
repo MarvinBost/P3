@@ -71,3 +71,10 @@
         transform: translate3d(0, 0, 0);
     }
 }
+
+@keyframes dots {
+    50% {
+        opacity: 0;
+        transform: scale(0.7);
+    }
+}
