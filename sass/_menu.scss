@@ -1,6 +1,7 @@
 .menu {
     display: flex;
     flex-flow: column wrap;
+    overflow: hidden;
     width: 20em;
     height: 50%;
     justify-items: center;
