@@ -9,3 +9,29 @@
         @content;
     }
 }
+
+@mixin hovereffect($color) {
+    a {
+        -webkit-text-fill-color: initial;
+        position: relative;
+        text-decoration: none;
+        color: $color;
+
+        &:after {
+            content: '';
+            transform-origin: 0 0;
+            transform: scaleX(0);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: .2rem;
+            background: $color;
+            transition: transform .5s;
+        }
+
+        &:hover:after {
+            transform: scaleX(1);
+        }
+    }
+}
