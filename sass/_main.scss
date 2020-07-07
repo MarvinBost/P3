@@ -31,6 +31,10 @@ main {
             font-size: 1.5rem;
             color: #fdcb46;
 
+            &:focus {
+                outline: none;
+            }
+
             >span {
                 width: 5px;
                 height: 5px;
