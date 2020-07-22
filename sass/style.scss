@@ -1,7 +1,15 @@
+// Import all fonts by Google Fonts
+
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script|Devonshire|Kurale|Kaushan+Script|Open+Sans:700&display=swap');
+
+$primary:#579c87;
+$secondary:#fdcb46;
+// Imports others files scss
 @import 'mixins.scss';
 @import 'functions.scss';
 @import 'animate.scss';
+
+// Code for all pages
 
 html,
 body {
@@ -10,7 +18,6 @@ body {
     font-family: 'Open Sans',
         sans-serif;
     transition: all 0.5s ease;
-    padding-bottom: 4rem;
 
     ::-webkit-scrollbar {
         width: 6px;
@@ -53,6 +60,8 @@ body {
         max-width: 1200px;
     }
 }
+
+// Imports others files scss
 
 @import 'header.scss';
 @import 'main.scss';
