@@ -2,18 +2,19 @@ header {
     display: flex;
     width: 100%;
     justify-content: center;
-    background: #579c87;
+    background: $primary;
 
     a {
         text-decoration: none;
         display: block;
         padding: 0.5em;
         font-size: 1.5em;
-        color: #fdcb46;
+        color: $secondary;
         font-weight: bold;
     }
 }
 
+// Mixins Media Queries
 
 @include mediamaxwidth(800px) {
     header {

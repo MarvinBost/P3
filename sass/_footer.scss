@@ -9,28 +9,22 @@ footer {
 
     a {
         text-decoration: none;
-        color: #fdcb46;
+        color: $secondary;
         font-size: large;
         padding: 1rem;
 
         @include mediamaxwidth(360px) {
             font-size: small;
         }
-
-
     }
 
     a:hover {
-        -webkit-animation-duration: 1s;
-        animation-duration: 1s;
-        -webkit-animation-fill-mode: both;
-        animation-fill-mode: both;
-        -webkit-animation-name: wobble;
-        animation-name: wobble;
+        -webkit-animation: 0.4s ease-in-out infinite wobble;
+        animation: 0.4s ease-in-out infinite wobble;
     }
 
     left:0px;
     bottom:0px;
-    background-color: #579c87;
+    background-color: $primary;
 
 }

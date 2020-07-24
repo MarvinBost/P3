@@ -6,7 +6,6 @@ main {
     justify-items: center;
     justify-content: center;
     align-items: center;
-    height: 70vh;
     margin: 0 20% 0 20%;
 
     h2 {
@@ -23,28 +22,32 @@ main {
         padding-bottom: 6rem;
 
         button {
-            background-color: #579c87;
+            // code pour l'apparence du bouton
+            background-color: $primary;
             width: 300px;
             border: none;
             height: 4rem;
             border-radius: 15px;
             font-size: 1.5rem;
-            color: #fdcb46;
+            color: $secondary;
 
             &:focus {
+                // désactiver l'outline au focus du bouton
                 outline: none;
             }
 
             >span {
+                // création des point en css
                 width: 5px;
                 height: 5px;
-                background-color: #fdcb46;
+                background-color: $secondary;
                 border-radius: 50%;
                 display: inline-block;
+                // application de l'animation
                 animation: dots 2s ease-in-out infinite;
 
                 &:nth-child(2) {
-                    animation-delay: 0.4s;
+                    animation-delay: 0.4s; // delai pour l'éffet de delais entre les points
                 }
 
                 &:nth-child(3) {
@@ -54,9 +57,12 @@ main {
         }
     }
 
+    // Mixins Media Queries
+
     @include mediamaxwidth(1280px) {
         flex-flow: row wrap;
         margin: 0;
+        height: 70vh;
     }
 
     @include mediaminwidth(1280px) {

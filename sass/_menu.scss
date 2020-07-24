@@ -9,10 +9,6 @@
     align-items: center;
     margin: 2rem;
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
 
     &.thumbnail {
         a {
@@ -35,10 +31,6 @@
     h2 {
         width: initial;
     }
-
-
-
-
 }
 
 .a {
@@ -70,6 +62,8 @@
     }
 
     .title {
+        padding: 0 5rem !important;
+
         h2 {
             font-family: 'Segoe Print',
                 sans-serif;
@@ -240,6 +234,7 @@
     }
 
     section {
+        width: 100%;
 
         .title {
             display: flex;
@@ -247,8 +242,6 @@
             align-items: center;
             justify-content: space-between;
             padding: 0 2rem;
-
-
         }
 
         .content {
