@@ -6,7 +6,6 @@ $primary:#579c87;
 $secondary:#fdcb46;
 // Imports others files scss
 @import 'mixins.scss';
-@import 'functions.scss';
 @import 'animate.scss';
 
 // Code for all pages
@@ -27,7 +26,7 @@ body {
     ::-webkit-scrollbar-thumb {
         border-radius: 10px;
         box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
-        background-color: #579c87;
+        background-color: $primary;
     }
 
     ::-webkit-scrollbar-track {
